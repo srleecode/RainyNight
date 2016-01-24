@@ -1,0 +1,101 @@
+@charset "utf-8";
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+   overflow:hidden;
+}
+.container {
+   min-height:100%;
+   position:relative;
+   background-image : url("../../Images/menacing storm.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.backMountains {
+    position:absolute;
+
+   width:100%;
+   height:100%;   /* Height of the footer */
+   background-image : url(../../Images/mountains2.png)
+        ;
+                      
+    background-repeat: no-repeat;
+    background-position: bottom, bottom;
+    background-size: 100% ;
+}
+.city {
+   position:absolute;
+
+   width:100%;
+   height:100%;   /* Height of the footer */
+   background-image : url(../../Images/skyline.png)
+        ;
+                      
+    background-repeat: no-repeat;
+    background-position: bottom, bottom;
+    background-size: 100% ;
+    z-index: 1;
+    
+}
+.frontMountains {
+    position:absolute;
+    width:100%;
+    height:100%;  
+    background-image : url(../../Images/mountains1.png);            
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% ;
+    z-index: 2;
+}
+
+.drop {
+    display: block;
+    z-index: 0;
+    position: absolute;
+    min-width: 2px;
+    min-height: 4px;
+    background: #5B74FD;
+    background: -moz-linear-gradient(top, #5B74FD, #E7F4FA);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#5B74FD), to(#E7F4FA));
+    background: -webkit-linear-gradient(top, #5B74FD, #E7F4FA);
+    background: -ms-linear-gradient(top, #5B74FD, #E7F4FA);
+    background: -o-linear-gradient(top, #5B74FD, #E7F4FA);
+    border-radius: 50%/80% 80% 20% 20%;
+    -moz-border-radius: 50%/90% 90% 10% 10%;
+    -webkit-border-radius: 63px/138px 138px 42px 42px;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='svgMask'><feGaussianBlur stdDeviation='1' /></filter></svg>#svgMask");
+    transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    top:-200px;  
+}
+
+.lighting {
+    position: absolute;
+    top: 0;
+    width: 1000px;
+    height: 562px;
+    background: url(../../Images/lighting_bg.png) no-repeat;
+    opacity: 0
+}
+
+.lighting.left {
+    left: 0;
+}
+
+.lighting.right {
+    left: inherit;
+    right: 10%;
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg)
+}

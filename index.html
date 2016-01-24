@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Create Storm</title>
+<link href="Client/Styles/main.css" rel="stylesheet" type="text/css"/>
+
+<script src="Scripts/jquery-1.12.0.min.js" type="text/javascript"></script>
+<script src="Scripts/storm.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="container">
+        <span class='lighting left'></span>
+        <span class='lighting right'></span>
+        <footer class="backMountains">
+            <div class="city"></div>
+            <div class="frontMountains"></div>
+        </footer>
+     </div>
+    <audio loop preload="auto" autoplay>
+            <source src="Sound/rain_cut.mp3" type="audio/mpeg">
+            Your browser does not support the <code>audio</code> tag.
+    </audio>
+<script>
+    $(document).ready(function() {
+        createStorm();
+    });
+</script>
+</body>
+</html>
